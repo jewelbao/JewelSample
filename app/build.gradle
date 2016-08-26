@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+//LAMBDA
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.jewel.sample"
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+
+    //签名
+    signingConfigs {
+        debug {
+//            storeFile file("keystore-release.jks")
+//            storePassword "maorong"
+//            keyAlias "mr"
+//            keyPassword "maorong"
+        }
+        release {
+            // 这样写就得把demo.jk文件放在项目目录
+//            storeFile file("keystore-release.jks")
+//            storePassword "maorong"
+//            keyAlias "mr"
+//            keyPassword "maorong"
+        }
+    }
+
+    buildTypes {
+         debug {
+            // 显示Log
+            debuggable true
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled true
+            // Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release //签名
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    //执行lint检查，有任何的错误或者警告提示，都会终止构建，我们可以将其关掉。
+    lintOptions {
+        abortOnError false
+    }
+
+    //渠道Flavors，配置不同风格的app
+//    productFlavors {
+//        GooglePlay {1}
+//        tengxun {2}
+//        xiaomi {3}
+//        umeng {4}
+//        _360 {5}
+//        baidu {6}
+//        wandoujia {7}
+//    }
+//    //批量配置
+//    productFlavors.all { flavor ->
+//        flavor.manifestPlaceholders = [CHANNEL_VALUE: name]
+//    }
+//    applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def outputFile = output.outputFile
+//            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                def fileName = outputFile.name.replace(".apk", "-${defaultConfig.versionName}.apk")
+//                output.outputFile = new File(outputFile.parent, fileName)
+//            }
+//        }
+//    }
+    //LAMBDA
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':customview')
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile 'com.nispok:snackbar:2.11.0'
+    // BlockCanary是一个Android平台的一个非侵入式的性能监控组件，
+    // 应用只需要实现一个抽象类，提供一些该组件需要的上下文环境，
+    // 就可以在平时使用应用的时候检测主线程上的各种卡慢问题，
+    // 并通过组件提供的各种信息分析出原因并进行修复。
+    compile 'com.github.moduth:blockcanary-ui:1.1.3'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.android.support:design:24.0.0'
+    compile 'com.android.support:cardview-v7:24.0.0'
+    compile 'com.android.support:support-v4:24.0.0'
+    // 图片轮播
+    compile 'cn.bingoogolapple:bga-banner:2.0.9'
+}
+//LAMBDA
+retrolambda {
+    jdk System.getenv("JAVA8_HOME")
+//    oldJdk System.getenv("JAVA7_HOME")
+//    javaVersion JavaVersion.VERSION_1_6
+    defaultMethods false
+    incremental true
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkbox_normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="普通广播"/>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkbox_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="有序广播"/>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkbox_local"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="本地广播"/>
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkbox_abort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拦截广播"/>
+
+    <Button
+        android:id="@+id/btn_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="null"
+        android:clickable="false"/>
+
+</LinearLayout>

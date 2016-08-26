@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">JewelSample</string>
+
+    <string name="tips_empty">撒么子都木有</string>
+    <string name="service_error">服务器睡觉去了</string>
+    <string name="title_anim_view">自定义动画View</string>
+    <string name="title_anim_shop">仿购物车动画</string>
+    <string name="title_anim_gif">gif动画View</string>
+    <string name="title_image_weixin">仿微信点击图片放大</string>
+    <string name="title_space_edit">自动空格EditText</string>
+    <string name="title_jump_text">跳动的文字</string>
+    <string name="title_marquee_text">文字广告轮播</string>
+    <string name="title_time_text">计时器按钮</string>
+    <string name="title_shape_weather">天气图标</string>
+    <string name="title_new">新闻</string>
+    <string name="title_component_scroll">仿淘宝商品详情页</string>
+    <string name="title_underLineTime">时间轴简易视图</string>
+    <string name="title_tools_broadcast">广播管理器</string>
+    <string name="title_tools_switch">选择器工具</string>
+</resources>

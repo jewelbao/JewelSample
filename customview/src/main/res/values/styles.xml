@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ExpandableView_TextView">
+        <!-- Base style to customize inner TextView inside visible content -->
+    </style>
+
+    <style name="DialogForGif" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item><!-- 悬浮效果 -->
+        <item name="android:windowIsTranslucent">true</item><!-- 半透明效果 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item><!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item> <!-- 背景模糊 -->
+        <item name="android:backgroundDimAmount">0.6</item> <!-- 背景模糊系数 -->
+    </style>
+</resources>

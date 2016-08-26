@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.jewel.sample"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application
+        android:name="com.jewel.base.BaseApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/LauncherTheme" >
+
+        <activity
+            android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ListItemAct"/>
+
+        <activity android:name=".ListView.AnimExpandableListAct"/>
+        <activity android:name=".ListView.ExpandableAct"/>
+        <activity android:name=".ListView.UnderLineTimeAct"/>
+
+
+        <activity android:name=".Anim.ShopAnimAct"/>
+        <activity android:name=".Anim.AnimViewAct"/>
+        <activity android:name=".Anim.SmoothImageAct0"/>
+        <activity android:name=".Anim.SmoothImageAct"/>
+        <activity android:name=".Anim.GifDialogAct"/>
+
+        <activity android:name=".Text.SpaceEditAct"/>
+        <activity android:name=".Text.JumpTextAct"/>
+        <activity android:name=".Text.PasswordEditAct"/>
+        <activity android:name=".Text.TimeButtonAct"/>
+        <activity android:name=".Text.MarqueeTextAct"/>
+
+
+        <activity android:name=".Api.ApiResultAct"/>
+        <activity android:name=".Api.NewsAct"/>
+
+        <activity android:name=".Tools.SharedPreAct"/>
+        <activity android:name=".Tools.BroadcastAct"/>
+        <activity
+            android:name=".Tools.SwitchDialogAct"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".Component.DragLayoutAct"/>
+
+        <activity android:name=".Shape.WeatherViewAct"/>
+
+        <activity android:name=".Test.CoordinatorLayoutAct"/>
+        <activity android:name=".Test.ShakeDetectorAct"/>
+
+        <meta-data
+            android:name="design_width"
+            android:value="720"/>
+        <meta-data
+            android:name="design_height"
+            android:value="1280"/>
+    </application>
+
+</manifest>

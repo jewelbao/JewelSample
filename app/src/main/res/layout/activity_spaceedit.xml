@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btn_str_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:text="确定" />
+
+    <EditText
+        android:id="@+id/et_str_num"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@id/btn_str_ok"
+        android:hint="请输入要插入空格的字符串个数"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_space_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/et_str_num"
+        android:text="确定" />
+
+    <EditText
+        android:id="@+id/et_space_num"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_str_num"
+        android:hint="请输入要插入的空格个数"
+        android:layout_toLeftOf="@id/btn_space_ok"
+        android:inputType="number" />
+
+    <com.jewelbao.customview.TextView.SpaceEditText
+        android:id="@+id/et_space"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_space_num"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@id/et_space"
+        android:text="默认每四个字符串插入一个空格" />
+</RelativeLayout>

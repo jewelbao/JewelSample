@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:weather="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" >
+
+    <com.jewelbao.customview.Weather.CloudFogView
+        android:id="@+id/w1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <com.jewelbao.customview.Weather.CloudHvRainView
+        android:id="@+id/w2"
+        android:layout_toRightOf="@+id/w1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <com.jewelbao.customview.Weather.CloudMoonView
+        android:id="@+id/w3"
+        android:layout_toRightOf="@+id/w2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <com.jewelbao.customview.Weather.CloudRainView
+        android:id="@+id/w4"
+        android:layout_below="@+id/w1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <com.jewelbao.customview.Weather.CloudSnowView
+        android:id="@+id/w5"
+        android:layout_toRightOf="@+id/w4"
+        android:layout_below="@+id/w1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <com.jewelbao.customview.Weather.CloudSunView
+        android:id="@+id/w6"
+        android:layout_toRightOf="@+id/w5"
+        android:layout_below="@+id/w1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <com.jewelbao.customview.Weather.CloudThunderView
+        android:id="@+id/w7"
+        android:layout_below="@+id/w4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <com.jewelbao.customview.Weather.CloudView
+        android:id="@+id/w8"
+        android:layout_below="@+id/w4"
+        android:layout_toRightOf="@+id/w7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <com.jewelbao.customview.Weather.SunView
+        android:id="@+id/w9"
+        android:layout_below="@+id/w4"
+        android:layout_toRightOf="@+id/w8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <com.jewelbao.customview.Weather.MoonView
+        android:id="@+id/w10"
+        android:layout_below="@+id/w7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <com.jewelbao.customview.Weather.WindView
+        android:id="@+id/w11"
+        android:layout_below="@+id/w7"
+        android:layout_toRightOf="@+id/w10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+</RelativeLayout>

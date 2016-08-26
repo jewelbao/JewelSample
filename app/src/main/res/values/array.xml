@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- start home gridview item name -->
+    <string-array name="grid_item">
+        <item>列表集合</item>
+        <item>文字集合</item>
+        <item>组件</item>
+        <item>奇形怪状</item>
+        <item>开发平台</item>
+        <item>简单动画</item>
+        <item>工具实践</item>
+        <item>测试</item>
+    </string-array>
+    <!-- end home gridview class name -->
+
+    <!-- start API item name -->
+    <string-array name="api_item">
+        <item>手机号码归属地</item>
+        <item>身份证查询</item>
+        <item>美女图文</item>
+        <item>新闻资讯</item>
+    </string-array>
+    <string-array name="api_class">
+        <item>com.jewel.sample.Api.ApiResultAct</item>
+        <item>com.jewel.sample.Api.ApiResultAct</item>
+        <item>com.jewel.sample.Api.ApiResultAct</item>
+        <item>com.jewel.sample.Api.NewsAct</item>
+    </string-array>
+    <string-array name="api_url">
+        <item>http://apis.baidu.com/apistore/mobilenumber/mobilenumber</item>
+        <item>http://apis.baidu.com/apistore/idservice/id</item>
+        <item>http://api.huceo.com/meinv/</item>
+    </string-array>
+    <string-array name="api_title_news">
+        <item>社会</item>
+        <item>国内</item>
+        <item>国际</item>
+        <item>体育</item>
+        <item>娱乐</item>
+        <item>科技</item>
+        <item>奇闻</item>
+        <item>健康</item>
+        <item>旅游</item>
+        <item>苹果</item>
+    </string-array>
+    <string-array name="api_url_news">
+        <item>http://api.huceo.com/social/</item>
+        <item>http://api.huceo.com/guonei/</item>
+        <item>http://api.huceo.com/world/</item>
+        <item>http://api.huceo.com/tiyu/</item>
+        <item>http://api.huceo.com/huabian/</item>
+        <item>http://api.huceo.com/keji/</item>
+        <item>http://api.huceo.com/qiwen/</item>
+        <item>http://api.huceo.com/health/</item>
+        <item>http://api.huceo.com/travel/</item>
+        <item>http://api.huceo.com/apple/</item>
+    </string-array>
+    <!-- end API class name -->
+
+    <!-- start TextView item name -->
+    <string-array name="text_item">
+        <item>广告跑马灯</item>
+        <item>自动空格EditText</item>
+        <item>JumpText</item>
+        <item>密码输入EditText</item>
+        <item>倒计时按钮</item>
+    </string-array>
+    <string-array name="text_class">
+        <item>com.jewel.sample.Text.MarqueeTextAct</item>
+        <item>com.jewel.sample.Text.SpaceEditAct</item>
+        <item>com.jewel.sample.Text.JumpTextAct</item>
+        <item>com.jewel.sample.Text.PasswordEditAct</item>
+        <item>com.jewel.sample.Text.TimeButtonAct</item>
+    </string-array>
+    <!-- end TextView class name -->
+
+    <!-- start anim item name -->
+    <string-array name="component_item">
+        <item>仿淘宝详情页下拉效果</item>
+    </string-array>
+    <string-array name="component_class">
+        <item>com.jewel.sample.Component.DragLayoutAct</item>
+    </string-array>
+    <!-- end anim class name -->
+
+    <!-- start anim item name -->
+    <string-array name="anim_item">
+        <item>仿淘宝购物车动画</item>
+        <item>自定义View</item>
+        <item>仿微信点击图片放大</item>
+        <item>Gif对话框</item>
+    </string-array>
+    <string-array name="anim_class">
+        <item>com.jewel.sample.Anim.ShopAnimAct</item>
+        <item>com.jewel.sample.Anim.AnimViewAct</item>
+        <item>com.jewel.sample.Anim.SmoothImageAct0</item>
+        <item>com.jewel.sample.Anim.GifDialogAct</item>
+    </string-array>
+    <!-- end anim class name -->
+
+    <!-- start tools item name -->
+    <string-array name="tools_item">
+        <item>即时存储SharedPre(优化即存即取的BUG)</item>
+        <item>广播管理</item>
+        <item>选择器对话框</item>
+    </string-array>
+    <string-array name="tools_class">
+        <item>com.jewel.sample.Tools.SharedPreAct</item>
+        <item>com.jewel.sample.Tools.BroadcastAct</item>
+        <item>com.jewel.sample.Tools.SwitchDialogAct</item>
+    </string-array>
+    <!-- end tools class name -->
+
+    <!-- start shape item name -->
+    <string-array name="shape_item">
+        <item>天气图标</item>
+    </string-array>
+    <string-array name="shape_class">
+        <item>com.jewel.sample.Shape.WeatherViewAct</item>
+    </string-array>
+    <!-- end shape class name -->
+
+    <!-- start test item name -->
+    <string-array name="test_item">
+        <item>Design CoordinatorLayout</item>
+        <item>ShakeDetectorAct</item>
+    </string-array>
+    <string-array name="test_class">
+        <item>com.jewel.sample.Test.CoordinatorLayoutAct</item>
+        <item>com.jewel.sample.Test.ShakeDetectorAct</item>
+    </string-array>
+    <!-- end test class name -->
+
+    <!-- start listview item name -->
+    <string-array name="list_item">
+        <item>AnimatedExpandableListView</item>
+        <item>ExpandableView</item>
+        <item>时间轴简易布局</item>
+    </string-array>
+    <string-array name="list_class">
+        <item>com.jewel.sample.ListView.AnimExpandableListAct</item>
+        <item>com.jewel.sample.ListView.ExpandableAct</item>
+        <item>com.jewel.sample.ListView.UnderLineTimeAct</item>
+    </string-array>
+    <!-- end listview class name -->
+
+    <!-- start ExpandableTextViewSampleStrings -->
+    <string-array name="ExpandableTextViewSampleStrings">
+        <item>"Android provides a rich application framework that allows you to build innovative apps and games for mobile devices in a Java language environment. The documents listed in the left navigation provide details about how to build apps using Android's various APIs."</item>
+        <item>"Android apps are built as a combination of distinct components that can be invoked individually. For instance, an individual activity provides a single screen for a user interface, and a service independently performs work in the background."</item>
+        <item>"From one component you can start another component using an intent. You can even start a component in a different app, such an activity in a maps app to show an address. This model provides multiple entry points for a single app and allows any app to behave as a user's "default" for an action that other apps may invoke."</item>
+        <item>"You can query the availability of device features at runtime if any app features require specific hardware such as a camera. If necessary, you can also declare features your app requires so app markets such as Google Play Store do not allow installation on devices that do not support that feature."</item>
+        <item>"Android provides an adaptive app framework that allows you to provide unique resources for different device configurations. For example, you can create different XML layout files for different screen sizes and the system determines which layout to apply based on the current device's screen size."</item>
+        <item>"Android provides a rich application framework that allows you to build innovative apps and games for mobile devices in a Java language environment. The documents listed in the left navigation provide details about how to build apps using Android's various APIs."</item>
+        <item>"Android provides a rich application framework that allows you to build innovative apps and games for mobile devices in a Java language environment. The documents listed in the left navigation provide details about how to build apps using Android's various APIs."</item>
+        <item>"Android provides a rich application framework that allows you to build innovative apps and games for mobile devices in a Java language environment. The documents listed in the left navigation provide details about how to build apps using Android's various APIs."</item>
+        <item>"Android provides a rich application framework that allows you to build innovative apps and games for mobile devices in a Java language environment. The documents listed in the left navigation provide details about how to build apps using Android's various APIs."</item>
+        <item>"Android provides a rich application framework that allows you to build innovative apps and games for mobile devices in a Java language environment. The documents listed in the left navigation provide details about how to build apps using Android's various APIs."</item>
+        <item>"test"</item>
+    </string-array>
+
+    <string-array name="passwordTypeArr">
+        <item>number</item>
+        <item>text</item>
+        <item>textVisible</item>
+        <item>textWeb</item>
+    </string-array>
+    <!-- start ExpandableTextViewSampleStrings -->
+</resources>
