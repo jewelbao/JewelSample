@@ -124,10 +124,12 @@
     <string-array name="test_item">
         <item>Design CoordinatorLayout</item>
         <item>ShakeDetectorAct</item>
+        <item>IRActivity</item>
     </string-array>
     <string-array name="test_class">
         <item>com.jewel.sample.Test.CoordinatorLayoutAct</item>
         <item>com.jewel.sample.Test.ShakeDetectorAct</item>
+        <item>com.jewel.sample.ir.IRActivity</item>
     </string-array>
     <!-- end test class name -->
 

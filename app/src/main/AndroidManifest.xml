@@ -65,6 +65,7 @@
 
         <activity android:name=".Test.CoordinatorLayoutAct"/>
         <activity android:name=".Test.ShakeDetectorAct"/>
+        <activity android:name=".ir.IRActivity" />
 
         <meta-data
             android:name="design_width"
